@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="{{ lang }}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ t['site_title'] }} - {% block title %}{% endblock %}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <nav class="navbar">
+    <a class="brand" href="{{ url_for('index') }}">{{ t['site_title'] }}</a>
+    <div class="nav-links">
+      <a href="{{ url_for('index') }}">{{ t['home'] }}</a>
+      <a href="{{ url_for('courses') }}">{{ t['explore_courses'] }}</a>
+      <a href="{{ url_for('tutors') }}">{{ t['peer_tutors'] }}</a>
+      <a href="{{ url_for('library') }}">{{ t['community_library'] }}</a>
+      <a href="{{ url_for('stories') }}">{{ t['story_exchange'] }}</a>
+      <a href="{{ url_for('skills') }}">{{ t['skill_builder'] }}</a>
+      <a href="{{ url_for('mental') }}">{{ t['well_being'] }}</a>
+      <a href="{{ url_for('quiz') }}">{{ t['quizzes'] }}</a>
+    </div>
+  </nav>
+  <main>
+    {% block content %}{% endblock %}
+  </main>
+  <footer>
+    &copy; {{ current_year }} {{ t['site_title'] }}
+  </footer>
+</body>
+</html>
