@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block title %}Tutors{% endblock %}
+{% block content %}
+<section class="hero">
+  <h1>Meet Our Tutors</h1>
+  <p>Learn from experienced educators in various fields.</p>
+</section>
+<section class="section">
+  <div class="grid-2">
+    <div class="card">
+      <img src="{{ url_for('static', filename='images/tutor1.png') }}" alt="Tutor 1">
+      <h3><a href="{{ url_for('tutor_john') }}">John Doe</a></h3>
+      <p>Python and Data Science Expert</p>
+    </div>
+    <div class="card">
+      <img src="{{ url_for('static', filename='images/tutor2.png') }}" alt="Tutor 2">
+      <h3><a href="{{ url_for('tutor_jane') }}">Jane Smith</a></h3>
+      <p>Web Development and UI/UX Designer</p>
+    </div>
+  </div>
+</section>
+{% endblock %}

@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block title %}Quizzes{% endblock %}
+{% block content %}
+<section class="hero">
+  <h1>Quizzes</h1>
+  <p>Test your knowledge with short quizzes on various topics.</p>
+</section>
+<section class="section">
+  <div class="grid-2">
+    <div class="card">
+      <h3><a href="{{ url_for('quiz_python_detail') }}">Python Quiz</a></h3>
+      <p>10 questions to test Python basics.</p>
+    </div>
+    <div class="card">
+      <h3><a href="{{ url_for('quiz_web_detail') }}">Web Dev Quiz</a></h3>
+      <p>HTML, CSS, JS quiz for beginners.</p>
+    </div>
+  </div>
+</section>
+{% endblock %}

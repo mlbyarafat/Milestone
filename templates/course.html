@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block title %}Courses{% endblock %}
+{% block content %}
+<section class="hero">
+  <h1>Explore Courses</h1>
+  <p>Choose from a variety of courses to grow your skills.</p>
+</section>
+<section class="section">
+  <div class="grid-2">
+    <div class="card">
+      <img src="{{ url_for('static', filename='images/course1.png') }}" alt="Python">
+      <h3><a href="{{ url_for('course_python') }}">Python for Beginners</a></h3>
+      <p>Learn Python from scratch with practical examples.</p>
+    </div>
+    <div class="card">
+      <img src="{{ url_for('static', filename='images/course2.png') }}" alt="Web Dev">
+      <h3><a href="{{ url_for('course_webdev') }}">Web Development</a></h3>
+      <p>Build modern websites using HTML, CSS, and JS.</p>
+    </div>
+    <div class="card">
+      <img src="{{ url_for('static', filename='images/course3.png') }}" alt= "Data Science" >
+      <h3><a href="{{ url_for('course_datasci') }}">Data Science</a></h3>
+      <p>Analyze and visualize data with Python libraries.</p>
+    </div>
+    <div class="card">
+      <img src="{{ url_for('static', filename='images/course4.png') }}" alt="AI">
+      <h3><a href="{{ url_for('course_ai') }}">AI & Machine Learning</a></h3>
+      <p>Learn AI concepts and build ML models.</p>
+    </div>
+  </div>
+</section>
+{% endblock %}

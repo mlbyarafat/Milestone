@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block title %}Stories{% endblock %}
+{% block content %}
+<section class="hero">
+  <h1>Story Exchange</h1>
+  <p>Share and read inspiring stories from learners around the world.</p>
+</section>
+<section class="section">
+  <div class="grid-2">
+    <div class="card">
+      <h3><a href="{{ url_for('story_zero') }}">From Zero to Hero</a></h3>
+      <p>How I learned Python in 3 months.</p>
+    </div>
+    <div class="card">
+      <h3><a href="{{ url_for('story_build') }}">Building a Website</a></h3>
+      <p>My journey into web development.</p>
+    </div>
+  </div>
+</section>
+{% endblock %}

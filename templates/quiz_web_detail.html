@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block title %}Web Dev Quiz{% endblock %}
+{% block content %}
+<section class="hero">
+  <h1>Web Development Quiz</h1>
+  <p>Test your knowledge in HTML, CSS, and JavaScript.</p>
+</section>
+
+<section class="section">
+  <form class="quiz-form">
+    <ol>
+      <li>
+        <p>What does HTML stand for?</p>
+        <input type="radio" name="q1" value="a"> HyperText Markup Language<br>
+        <input type="radio" name="q1" value="b"> HighText Machine Language<br>
+      </li>
+      <li>
+        <p>Which CSS property changes text color?</p>
+        <input type="radio" name="q2" value="a"> font-color<br>
+        <input type="radio" name="q2" value="b"> color<br>
+      </li>
+      <li>
+        <p>What keyword is used to declare a variable in JavaScript?</p>
+        <input type="radio" name="q3" value="a"> var<br>
+        <input type="radio" name="q3" value="b"> variable<br>
+      </li>
+    </ol>
+  </form>
+</section>
+{% endblock %}

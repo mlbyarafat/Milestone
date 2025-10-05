@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block title %}Well-being{% endblock %}
+{% block content %}
+<section class="hero">
+  <h1>Well-being</h1>
+  <p>Tips and resources for mental health and stress management.</p>
+</section>
+<section class="section">
+  <div class="grid-2">
+    <div class="card">
+      <h3><a href="{{ url_for('mental_meditation') }}">Meditation Guide</a></h3>
+      <p>Learn simple daily meditation techniques.</p>
+    </div>
+    <div class="card">
+      <h3><a href="{{ url_for('mental_time') }}">Time Management</a></h3>
+      <p>Improve productivity and reduce stress.</p>
+    </div>
+  </div>
+</section>
+{% endblock %}

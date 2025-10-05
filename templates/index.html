@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+{% block content %}
+<section class="hero">
+  <h1>Welcome to {{ t['site_title'] }}</h1>
+  <p>Your learning journey starts here! Explore courses, connect with tutors, read stories, and boost your skills.</p>
+  <a href="{{ url_for('courses') }}" class="btn">Explore Courses</a>
+</section>
+<section class="section">
+  <h2>Top Courses</h2>
+  <div class="grid-3">
+    <div class="card">
+      <img src="{{ url_for('static', filename='images/course1.png') }}" alt="Course 1">
+      <h3>Python for Beginners</h3>
+      <p>Learn Python from scratch with practical examples.</p>
+    </div>
+    <div class="card">
+      <img src="{{ url_for('static', filename='images/course2.png') }}" alt="Course 2">
+      <h3>Web Development</h3>
+      <p>Build modern websites using HTML, CSS, and JS.</p>
+    </div>
+    <div class="card">
+      <img src="{{ url_for('static', filename='images/course3.png') }}" alt="Course 3">
+      <h3>Data Science Basics</h3>
+      <p>Analyze and visualize data with Python libraries.</p>
+    </div>
+  </div>
+</section>
+{% endblock %}

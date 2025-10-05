@@ -1,0 +1,9 @@
+{% extends "base.html" %}{% block title %}Python E-book{% endblock %}{% block content %}
+<section class="container">
+  <h1>Beginner's Python E-book</h1>
+  <p>This free e-book covers Python basics with examples and exercises. Perfect for learners who prefer reading.</p>
+  <h2>Contents</h2>
+  <ul><li>Introduction and setup</li><li>Data types and control flow</li><li>Functions and modules</li><li>Working with files</li></ul>
+  <p><a href="{{ url_for('static', filename='images/placeholder.png') }}" download>Download e-book (sample)</a></p>
+</section>
+{% endblock %}
